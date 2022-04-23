@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col left">
+    <div class="action-div">
+      <div class="row">
+        <input type="text" #inputOne />
+        <button (click)="saveSubjectData(inputOne.value)">
+          Submit (subject)
+        </button>
+      </div>
+      <div class="row">
+        <input type="text" #inputTwo />
+        <button (click)="saveBehSubjectData(inputTwo.value)">
+          Submit (beh subject)
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col center">
+    <app-one></app-one>
+  </div>
+  <div class="col right">
+    <app-two></app-two>
+  </div>
+</div>
